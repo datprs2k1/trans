@@ -16,7 +16,7 @@ textTranslate = textTranslate.split("\n")
 
 for i in range(len(textArray)):
     entry = textArray[i].split("\n")
-    entry[2] = textTranslate[i].split('. ')[1]
+    entry[2] = textTranslate[i].split('_')[1]
     textArray[i] = entry
 
 with open('translated.srt', 'w', encoding="utf8") as f:
